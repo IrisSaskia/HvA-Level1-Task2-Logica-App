@@ -7,4 +7,7 @@
     <string name="text_true">T</string>
     <string name="text_false">F</string>
     <string name="button_text">Submit</string>
+    <string name="acceptable_answers">tfTF</string>
+    <string name="check_message">You have %d answers correct!</string>
+    <string name="error_message">You have to fill everything in first!</string>
 </resources>

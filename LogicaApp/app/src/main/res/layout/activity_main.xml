@@ -22,7 +22,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tvTitleA"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -32,7 +32,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvTitleB"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -42,7 +42,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvTitleAB"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -76,12 +76,18 @@
                 android:text="@string/text_true"
                 android:textSize="36sp" />
 
-            <Spinner
-                android:id="@+id/sAnswer1"
+            <EditText
+                android:id="@+id/etAnswer1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:entries="@array/answer_option" />
+                android:digits="@string/acceptable_answers"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textSize="36sp" />
+
         </TableRow>
 
         <TableRow
@@ -108,12 +114,17 @@
                 android:text="@string/text_false"
                 android:textSize="36sp" />
 
-            <Spinner
-                android:id="@+id/sAnswer2"
+            <EditText
+                android:id="@+id/etAnswer2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:entries="@array/answer_option" />
+                android:digits="@string/acceptable_answers"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textSize="36sp" />
 
         </TableRow>
 
@@ -141,13 +152,17 @@
                 android:text="@string/text_true"
                 android:textSize="36sp" />
 
-            <Spinner
-                android:id="@+id/sAnswer3"
+            <EditText
+                android:id="@+id/etAnswer3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:entries="@array/answer_option"
-                android:spinnerMode="dropdown" />
+                android:digits="@string/acceptable_answers"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textSize="36sp" />
 
         </TableRow>
 
@@ -175,12 +190,17 @@
                 android:text="@string/text_false"
                 android:textSize="36sp" />
 
-            <Spinner
-                android:id="@+id/sAnswer4"
+            <EditText
+                android:id="@+id/etAnswer4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:entries="@array/answer_option" />
+                android:digits="@string/acceptable_answers"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textSize="36sp" />
 
         </TableRow>
     </TableLayout>

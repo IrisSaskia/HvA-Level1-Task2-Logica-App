@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string-array name="answer_option">
-        <item> </item>
-        <item>T</item>
-        <item>F</item>
-    </string-array>
-</resources>
