@@ -10,4 +10,5 @@
     <string name="acceptable_answers">tfTF</string>
     <string name="check_message">You have %d answers correct!</string>
     <string name="error_message">You have to fill everything in first!</string>
+    <string name="super_error">ERROR!!!</string>
 </resources>

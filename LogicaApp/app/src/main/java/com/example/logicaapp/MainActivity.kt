@@ -2,29 +2,31 @@ package com.example.logicaapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private val valuesA = arrayOf(tvA1, tvA2, tvA3, tvA4);
-    private val valuesB = arrayOf(tvB1, tvB2, tvB3, tvB4);
-    private val answers = arrayOf(etAnswer1, etAnswer2, etAnswer3, etAnswer4);
+    private val valuesA = intArrayOf(R.id.tvA1, R.id.tvA2, R.id.tvA3, R.id.tvA4);
+    private val valuesB = intArrayOf(R.id.tvB1, R.id.tvB2, R.id.tvB3, R.id.tvB4);
+    private val answers = intArrayOf(R.id.etAnswer1, R.id.etAnswer2, R.id.etAnswer3, R.id.etAnswer4);
     private var amountCorrect: Int = 0;
-    private var returnMessage: String = "";
+    private var returnMessage: String = getString(R.string.super_error);
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //initViews();
+        initViews();
     }
 
-    /*private fun initViews() {
+    private fun initViews() {
         btnSubmit.setOnClickListener {
             if(etAnswer1.text.isNotEmpty() && etAnswer2.text.isNotEmpty() && etAnswer3.text.isNotEmpty() && etAnswer4.text.isNotEmpty()) {
                 amountCorrect = 0;
-                for ((index, answer) in answers.withIndex()) {
-                    if(checkIfCorrect(valuesA[index].text.toString(), valuesB[index].text.toString(), answer.text.toString())) {
+                for((index, answer) in answers.withIndex()) {
+                    if(checkIfCorrect(findViewById<TextView>(valuesA[index]).text.toString(), findViewById<TextView>(valuesB[index]).text.toString(), answer.toString())) {
                         amountCorrect++;
                     }
                 }
@@ -48,5 +50,5 @@ class MainActivity : AppCompatActivity() {
         } else {
             return false;
         }
-    }*/
+    }
 }
