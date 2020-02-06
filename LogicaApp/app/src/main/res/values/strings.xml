@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Logica App</string>
+    <string name="title_text">Conjunction (AND)</string>
+    <string name="text_a">A</string>
+    <string name="text_b">B</string>
+    <string name="text_AND">A ^ B</string>
+    <string name="text_true">T</string>
+    <string name="text_false">F</string>
+</resources>
