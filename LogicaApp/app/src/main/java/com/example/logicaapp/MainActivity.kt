@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var valuesA: Array<TextView>;
     lateinit var valuesB: Array<TextView>;
     lateinit var answers: Array<EditText>;
-    var amountOfQuestions: Int = 5;
+    var amountOfQuestions: Int = 3;
     var amountCorrect: Int = 0;
     lateinit var returnMessage: String;
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         btnSubmit.setOnClickListener {
             if(etAnswer1.text.isNotEmpty() && etAnswer2.text.isNotEmpty() && etAnswer3.text.isNotEmpty() && etAnswer4.text.isNotEmpty()) {
                 amountCorrect = 0;
-                for(x in 1..amountOfQuestions) {
+                for(x in 0..amountOfQuestions) {
                     var valueForA = valuesA[x].text.toString();
                     var valueForB = valuesB[x].text.toString();
                     var answerValue = answers[x].text.toString();
